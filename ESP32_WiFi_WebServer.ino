@@ -158,6 +158,8 @@ void setup()
 {
 	// Serial port for debugging purposes
 	Serial.begin( 115200 );
+	if( !Serial )
+		delay( 1000 );
 
 	initSPIFFS();
 
